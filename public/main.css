@@ -1,0 +1,64 @@
+body{
+    background-color: skyblue;
+}
+
+p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: antiquewhite;
+    border-top: 5px solid antiquewhite;
+    margin:20px;
+    background-color:plum;
+}
+#addbtn{
+    outline: 0 !important;
+    background-color: blueviolet;
+    color: antiquewhite;
+    border: none !important ;
+    padding:25px;
+    margin: 30px;
+    cursor: pointer;
+    display: inline-block; 
+    font-size: 20px;
+}
+
+#updtbtn{
+    background-color: blueviolet;
+    color: antiquewhite;
+    border: none;
+    padding:25px;
+    margin: 30px;
+    cursor: pointer;
+    display: inline-block; 
+    font-size: 20px;
+}
+
+#delbtn{
+    background-color: blueviolet;
+    color: antiquewhite;
+    border: none;
+    padding:25px;
+    margin: 30px;
+    cursor: pointer;
+    display: inline-block; 
+    font-size: 20px;
+}
+
+#getData{
+    border: none !important ;
+    outline: 0 !important;
+    background-color: blueviolet;
+    color: antiquewhite;
+    border: none;
+    padding:25px;
+    margin: 30px;
+    cursor: pointer;
+    display: inline-block; 
+    font-size: 20px;
+}
+
+
+
+
+

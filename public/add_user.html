@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/public/addUser_style.css"  charset="utf-8">
+        <meta charset="utf-8"/>
+        <title>Shift-tracker</title>
+        <script type="text/javascript" src="/public/adduser.js">
+            </script>
+        </head>
+    <body>
+        <form id = "form1" method="POST" action="/add_user">
+            <p>ENTER THE USER INFO ...</p><br/>
+            <p id="form_inputs">
+            FIRST NAME <br/><input type="text" name="firstName" placeholder="first name..."><br/>
+             LAST NAME<br/><input type = "text" name= "lastName" placeholder="last name..."><br/>
+             EMPLOYEE ID<br/><input type = "number" name= "EmpId" placeholder="employee id..."><br/><br/>
+           <button type="submit">add User</button>
+            </p>
+            </form>
+        <p id = "msg"></p>
+    </body>
+</html>

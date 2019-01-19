@@ -1,0 +1,19 @@
+body{
+    background-color:skyblue;
+    text-align: center;
+}
+
+
+#form1{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+}
+
+#form_inputs{
+    text-align: left;
+    font-size: 20px;
+}
+
