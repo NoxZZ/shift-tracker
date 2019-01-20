@@ -10,7 +10,7 @@ const hbr = require('express-handlebars');
 app.use(express.static('../shift-tracker'));
 
 //including handlebars
-app.set('views',path.join(__dirname,'/views/layouts'));
+app.set('views',path.join(__dirname,'/views'));
 app.engine('handlebars',hbr({defaultLayout:'main'}));
 app.set('view engine','handlebars'); 
 //including bodyparser
@@ -26,13 +26,13 @@ db.on('error',console.error.bind(console,'Mongodb connection error'));
 
 app.get('/',function(req,res){
     console.log('requested on '+ req.url);
-    res.sendFile(__dirname+'/public/index.html');
+    res.render('index',{title:'SHIFT-TRACKER'});
 });
 
 //serving the get data file
 app.get('/add_user',function(req,res){
     console.log('requested on '+ req.url);
-    res.sendFile(__dirname+'/public/add_user.html');
+    res.render('add_user',{title:'add user'});
 }); 
 
 //this part  will store the data taken from user :
@@ -60,7 +60,7 @@ app.get('/get_data',function(req,res){
            return  res.send(err);
             console.log(err);
         }
-         res.render('get_data',{title:'work in progress...',condition:true});
+         res.render('get_data',{title:'workin',userInfo:docs});   
     });
 }); 
 
