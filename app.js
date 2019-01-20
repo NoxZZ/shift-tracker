@@ -10,7 +10,7 @@ const hbr = require('express-handlebars');
 app.use(express.static('../shift-tracker'));
 
 //including handlebars
-app.set('views',path.join(__dirname,'views'));
+app.set('views',path.join(__dirname,'/views/layouts'));
 app.engine('handlebars',hbr({defaultLayout:'main'}));
 app.set('view engine','handlebars'); 
 //including bodyparser
@@ -60,7 +60,7 @@ app.get('/get_data',function(req,res){
            return  res.send(err);
             console.log(err);
         }
-         res.render('get_data',{docs});
+         res.render('get_data',{title:'work in progress...',condition:true});
     });
 }); 
 
